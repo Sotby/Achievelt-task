@@ -108,37 +108,30 @@ html,body{
             width: 75%;
         };
     }
-}
-
-
-.vLine{
-    width: 2px;
-    height: 80%;
-    background-color: white;
-    border-radius: 1px;
-}
-
-.sBody{
-    width: 100%;
-    height: calc(100% - 40px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    & div{
+    & .vLine{
+        width: 2px;
+        height: 80%;
+        background-color: white;
+        border-radius: 1px;
+    }
+    
+    & .sBody{
+        width: 100%;
+        height: calc(100% - 40px);
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
+        color: white;
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
-
-
-
-
 /*Login*/
-
 
 #loginb{
     position: relative;
@@ -243,24 +236,62 @@ html,body{
         
     }
 }
+/*Perfil*/
 
+#Perfil{
+    display: flex;
+    background-color: #2C4466;
+    & nav{
+        display: flex;
+        flex-direction: column;
+        background-color: #9CAA8E;
+        height: calc(100% - 20px);
+        width: fit-content;
+        padding: 10px;
+        & #navTogle{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            & .Bar{
+                height: 5px;
+                width: 100%;
+                border-radius: 2.5px;
+                background-color: black;
+                margin: 10px 0;
+            }
+        }
+        & img{
+            width: 50px;
+            height: 50px;
+            mix-blend-mode: color-burn;      
+        }
+        & a{
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            margin: 100px 0;
+            width: 100%;
+        }
+    }
+    & section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        & #profile{
+            width: 50%;
+            height: 25%;
+            
+            & img{
+                width: 50%;
+                border-radius: 50%;
+                border: solid 1px black;
+            }
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*Geral*/
 .outfit{
